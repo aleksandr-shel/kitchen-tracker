@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="layout.html">
+<head>
+<meta charset="UTF-8">
+<title>Recipes</title>
+<link rel="stylesheet" href="/css/recipes.css"/>
+</head>
+
+<body>
+	
+	<section layout:fragment="content">
+		
+		<h1 style="text-align:center">Recipes</h1>
+		
+		<a href="/add-recipe" class="btn-add-recipe" >Add Recipe</a>
+		<form id="formSearchRecipe" style="padding: 8px 8px;" action="/search/recipes" autocomplete="off">
+			<input style="padding: 8px 8px;" type="text" name="searchKey" placeholder="Recipe name">
+			<input style="padding: 8px 8px;" type="submit" value="Search">
+		</form>
+		
+		<button class="btn-my-recipes">My Recipes</button>		
+		
+		<div id="recipes-list" class="recipes-list-class">
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">Recipe Name</th>
+						<th scope="col">Description</th>
+						<th scope="col">Image</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		
+		<script src="/js/recipes.js"></script>
+	</section>
+</body>
+</html>

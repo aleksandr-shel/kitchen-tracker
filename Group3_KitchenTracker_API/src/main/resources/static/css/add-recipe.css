@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+
+
+.add-recipe-form{
+	margin:10px;
+}
+
+.add-recipe-form > div{
+	margin:10px;
+}
+
+.add-recipe-form input[type="submit"], input[type="reset"], button{
+	padding: 8px;
+}
+
+textarea
+{
+	height:200px; 
+	width:400px;
+}
+
+.btn-add-ingredient{
+	padding: 7px;
+	background-color:#0091ff;
+	color:white;
+}
+
+.ingredients-list div{
+	margin:10px;
+}
+
+
+.btn-remove-ingredient{
+	font:bold;
+	padding: 0px 4px;
+	color: #6b6b6b;
+}
+
+
+
+
+
+
+
+
+

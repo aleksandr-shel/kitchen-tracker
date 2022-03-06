@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="layout.html">
+<head>
+<meta charset="UTF-8">
+<title>Add Recipe Page</title>
+<link rel="stylesheet" href="/css/add-recipe.css"/>
+</head>
+<body>
+	
+	<section layout:fragment="content">
+		
+		<h1 style="text-align:center">Add Recipe Page</h1>
+		
+		<form id="addRecipeForm" class="add-recipe-form" autocomplete="off">
+			<input type="hidden" id="userId" name="author_id">
+			
+			<div>
+				<label for="recipename">Recipe Name: </label>
+				<input placeholder="Recipe Name" name="name" id="recipename" type="text" required>
+			</div>
+			<label for="description">Description: </label>
+			<div>
+				<textarea id="description" placeholder="Description" name="description" required></textarea>
+			</div>
+			<div>
+				<label for="imageurl">Image URL: </label>
+				<input id="imageurl" placeholder="Image URL" name="imageUrl" type="text">
+			</div>
+			<label for="ingredients">Ingredients: </label> <button type="button" class="btn-add-ingredient">Add Ingredient</button>
+			<div id="ingredients" class="ingredients-list">
+				<div>
+					<input placeholder="Enter an ingredient" name="ingredients" type="text">
+					<button type="button" class='btn-remove-ingredient'>X</button>
+				</div>
+			</div>
+			<div>
+				<input type="submit" value="Add">
+				<input type="reset" value="Reset">
+			</div>
+			<div>
+				<button type="button" onclick="location.href='/recipes'">Cancel</button>
+			</div>
+		</form>
+		
+		<script src="/js/add-recipe.js"></script>
+	</section>
+</body>
+</html>

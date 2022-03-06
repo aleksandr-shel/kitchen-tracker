@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="layout.html">
+<head>
+<meta charset="UTF-8">
+<title>Recipe Details</title>
+<link rel="stylesheet" href="/css/recipe.css"/>
+</head>
+
+<body>
+	
+	<section layout:fragment="content">
+		<span style="display:none" id="recipeId" th:data-value="${id}"></span>
+		
+		<div id="RecipeDiv" class="recipe-details-container">
+			
+		</div>
+		
+		<script src="/js/recipe.js"></script>
+	</section>
+</body>
+</html>

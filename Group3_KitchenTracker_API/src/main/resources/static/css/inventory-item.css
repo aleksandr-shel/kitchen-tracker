@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.update-item-form div {
+	margin: 10px;
+}
+
+.update-item-form{
+	margin: 10px;
+}
+
+.update-item-form input[type="submit"], input[type="reset"], button[type="button"]{
+	padding: 8px;
+}
+

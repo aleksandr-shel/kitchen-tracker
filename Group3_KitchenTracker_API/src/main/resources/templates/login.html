@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="layout.html">
+<head>
+<meta charset="UTF-8">
+<title>Login Page</title>
+</head>
+
+<body>
+
+	<section layout:fragment="content">
+		<h2>Login</h2>
+	
+		<div class="form">
+			<form action="/login/user" method="post" id="loginForm">
+				<table>
+					<tr>
+					<td>User Name</td>
+					<td><input name="username" type="text" placeholder="Username"></td>
+					</tr>
+					
+					<tr>
+					<td>Password</td>
+					<td><input name="password" type="password" placeholder="Password"></td>
+					</tr>
+					
+					<tr>
+					<td><button type="submit">Login</button></td>
+					<td><img src="/img/loading-buffering.gif" width="20px" height="20px" style="display:none" id="loading"></td>
+					</tr>
+					<tr>
+					<td><a href="/register" style= "color:black;">Register</a></td>
+					</tr>
+				</table>
+				<div><span id="loginMessage"></span></div>
+			</form>
+		</div>
+		<script src="/js/login.js"></script>
+	</section>
+	
+	
+
+</body>
+
+
+
+
+
+</html>

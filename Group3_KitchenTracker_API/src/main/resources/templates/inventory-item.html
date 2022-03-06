@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="layout.html">
+<head>
+<meta charset="UTF-8">
+<title>Item</title>
+<link rel="stylesheet" href="/css/inventory-item.css"/>
+</head>
+
+<body>
+	
+	<section layout:fragment="content">
+		<span id="itemId" style="display:none" th:data-value="${itemId}"></span>
+		
+		<form class="update-item-form" autocomplete="off">
+			<div>
+				<input placeholder="Item Name" name="itemName" type="text" required>
+			</div>
+			<div>
+				<input name="dateExpiration" type="date">
+			</div>
+			<div>
+				<input type="submit" value="Edit">
+				<input type="reset" value="Reset">
+			</div>
+			<div>
+				<button type="button" onclick="location.href='/inventory'">Cancel</button>
+			</div>
+		</form>
+		
+		<script src="/js/inventory-item.js"></script>
+	</section>
+</body>
+</html>

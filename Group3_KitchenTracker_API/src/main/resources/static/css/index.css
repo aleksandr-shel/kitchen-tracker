@@ -1,0 +1,50 @@
+img 
+{
+  
+  border-radius: 8px;
+  padding: 5px;
+  
+  height: auto; 
+  width: auto; 
+  max-width: 300px; 
+  max-height: 300px;
+}
+
+
+/* center the image */
+img 
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.8;
+}
+
+
+/* adding fancy font */
+
+h3
+{ 
+	font-family: "Lucida", cursive; font-size: 20px; font-style: normal; 
+	font-variant: normal; font-weight: 700; line-height: 26.4px; position: relative;
+	top: -30px;
+
+} 
+
+
+h1
+{ 
+	font-family: "Lucida", cursive; font-size: 35px; font-style: normal; 
+	font-variant: normal; font-weight: 700; line-height: 26.4px; position: relative;
+
+} 
+
+
+img{
+	transition: transform .2s; 
+}
+
+
+img:hover {
+  transform: scale(1.2);
+}

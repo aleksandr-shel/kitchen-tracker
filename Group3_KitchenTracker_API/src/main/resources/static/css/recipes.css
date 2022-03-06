@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+
+:root{
+	--margin-btn: 1px;
+}
+
+.recipe-list-item{
+	padding: 10px 6px;
+	transition: transform .2s;
+	font-weight: bold;
+}
+
+.recipe-list-item:hover{
+	transform: scale(1.025);
+}
+
+.recipes-list-class table{
+ width: 690px;
+}
+
+
+div.recipes-list-class th, td{
+ border: 1px solid black;
+}
+
+img{
+	transition: transform .2s; 
+}
+
+
+img:hover 
+{
+  transform: scale(1.2);
+}
+
+.btn-add-recipe{
+	text-decoration:none;
+	padding:8px;
+	background-color: #45965a;
+	color: white;
+	display:none;
+}
+
+
+.btn-delete-recipe{
+	text-decoration:none;
+	padding:8px;
+	margin:var(--margin-btn);
+	background-color: #e64c59;
+	color: white;
+}
+
+.btn-details-recipe{
+	text-decoration:none;
+	padding:8px;
+	margin:var(--margin-btn);
+	background-color: #4e7ac2;
+	color: white;
+	display: block;
+}
+
+.btn-edit-recipe{
+	text-decoration:none;
+	padding:8px;
+	margin:var(--margin-btn);
+	background-color: #7a7a7a;
+	color: white;
+	display: block;
+}
+
+.btns{
+	padding: 8px;
+	margin: 6px;
+}
+
+.btn-my-recipes{
+	display:none;
+	padding:8px;
+	background-color: #ff7654;
+	color: white;
+	cursor:pointer;
+}
+
+/*************** additions ***********************************************/
+/* .topnav a:visited
+{
+  background-color: #ddd;
+  color: black;
+} */
+
+
+
+
+
+
+
+

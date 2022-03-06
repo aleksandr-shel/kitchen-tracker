@@ -1,0 +1,25 @@
+h3
+{
+	font-weight: 900;
+}
+
+label
+{
+	font-weight: 700;
+}
+
+textarea
+{
+	height:200px; 
+	width:350px;
+}
+
+p
+{
+	font-weight:700;
+	font-size: 15px
+}
+input
+{
+	height: 19px;
+}

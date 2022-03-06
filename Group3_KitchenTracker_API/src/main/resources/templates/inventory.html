@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="layout.html">
+<head>
+<meta charset="UTF-8">
+<title>Inventory Page</title>
+<link rel="stylesheet" href="/css/inventory.css"/>
+</head>
+<body>
+	
+	<section layout:fragment="content">
+		
+		<h1 style="text-align:center">Inventory</h1>
+		
+		<form id="addItemForm" class="add-item-form" style="display:none" autocomplete="off">
+			<div>
+				<input placeholder="Item Name" name="itemName" type="text" required>
+			</div>
+			<div>
+				<input name="dateExpiration" type="date">
+			</div>
+			<div>
+				<input type="submit" value="Add">
+				<input type="reset" value="Reset">
+			</div>
+			<div>
+				<button type="button" id="cancelAddItemForm">Cancel</button>
+			</div>
+		</form>
+		
+		<button id="addItemBtn" class="btn-open-item-add-form">Add Item</button>
+		
+		<div id="inventory-list" class="inventory-list-class">
+			<table>
+				<thead>
+					<tr>
+						<th scope="col">Item Name</th>
+						<th scope="col">Expiration Date</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+		</div>
+		
+		<script src="/js/inventory.js"></script>
+	</section>
+</body>
+</html>

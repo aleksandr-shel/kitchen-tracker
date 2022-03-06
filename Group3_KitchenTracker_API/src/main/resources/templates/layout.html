@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/css/style.css"/>
+<link rel="shortcut icon" href="/logos/Kitchen Tracker-logos.jpeg" />
+</head>
+
+<body>
+	<!-- Link to header (NAVBAR) -->
+	<div class="topnav">
+	 <a href="/">Home </a>
+	 <a href="/recipes">Recipes</a>
+	 <a href="/contact">Contact</a>
+	 <a href="/about">About</a> 
+	 <a href="/login" id="loginButton">Login</a>
+	 <a href="/inventory" style="display:none" id="inventoryButton">Inventory</a>
+	 <a href="#" style="display:none" id="logoutButton">Logout</a>
+	</div>
+	
+	
+	<section layout:fragment="content" class="container-main">
+		
+    </section>
+	
+	
+	<script src="/js/script.js"></script>
+
+</body>
+</html>

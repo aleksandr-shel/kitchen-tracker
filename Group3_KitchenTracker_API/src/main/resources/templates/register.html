@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+  layout:decorate="layout.html">
+<head>
+<meta charset="UTF-8">
+<title>Register Page</title>
+</head>
+
+<body>
+
+	<section layout:fragment="content">
+		<h2>Register</h2>
+		<div class="form">
+			<form id="formRegister">
+				<table>  
+	                <tr>  
+	                    <td><label for="Name"> User Name</label></td>  
+	                    <td><input type="text" name="username" required></input></td>  
+	                </tr>
+	                <tr>  
+	                    <td><label for="Password">Password</label></td>  
+	                    <td><input type="password" name="password" required></input></td>  
+	                </tr> 
+	                <tr>  
+	                    <td><label for="Email">Email</label></td>  
+	                    <td><input type="text" name="email" required></input></td>  
+	                </tr>  
+	                <tr>  
+	                    <td><label for="FirstName">First Name</label></td>  
+	                    <td><input type="text" name="firstName" required></input></td>  
+	                </tr> 
+	                <tr>  
+	                    <td><label for="LastName">Last Name</label></td>  
+	                    <td><input type="text" name="lastName" required></input></td>  
+	                </tr> 
+	                <tr>
+	                <td><input type="reset" value="Reset"></input></td>
+	                <td><input type="submit" value="Register"></input></td>
+	                </tr> 
+	                <tr>
+	                	<td>Have an account?</td>
+	                	<td>Move to <a href="/login">Login Page</a></td>
+	                </tr>
+	                <tr>
+	                	<td><img src="/img/loading-buffering.gif" width="20px" height="20px" style="display:none" id="loading"></td>
+	                </tr>
+	            </table>  
+	            <div><span id="registerMessage"></span></div>
+	       </form>
+       </div>
+       <script src="/js/register.js"></script>
+	</section>
+	
+	
+
+</body>
+
+
+
+
+
+</html>

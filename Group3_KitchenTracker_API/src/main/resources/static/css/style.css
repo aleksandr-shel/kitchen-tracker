@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+.topnav 
+{
+  background-color: #240a0a;
+  overflow: hidden;
+  margin-left:auto;
+  margin-right:auto;
+  width:55vw;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a 
+{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  background-color: #240a0a;
+  color: white;
+}
+
+.container-main{
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  width:55vw;
+}
+
+.container-main table{
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover 
+{
+  background-color: #b5b359;
+  color: black;
+}
+
+.topnav a:focus
+{
+  background-color: #ddd;
+  color: black;
+}
+
+h2 
+{
+  text-align: center;
+}
+
+
+
+body
+{
+	background-color:lightblue;
+	max-width: max-content;    /*center page*/
+	margin: auto;
+	
+	
+	/* Background image is centered vertically and horizontally at all times */
+    background-position: center center;
+
+    /* So Background image doesn't tile */
+    background-repeat: no-repeat;
+
+
+    /* Makes the background image rescale based on the container's size */
+        background-size: cover;
+
+    font-family: 'Poppins', sans-serif;
+    /* background-image: url("../img/BrownFruits.jpg"); */
+    background-image: url("../img/4kVeg.jpg"); 
+    background-color: rgb(48, 0, 0);
+}
+	
+
+/* align the form */
+div.form
+{
+    display: block;
+    text-align: center;
+}
+form
+{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.tab 
+{
+ margin-left: 2.5em
+}
+
+
+
